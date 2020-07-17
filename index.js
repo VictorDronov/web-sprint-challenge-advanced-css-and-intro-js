@@ -271,15 +271,17 @@ returns an array with names of artists who were born in and died in
  * Note that sucessfully invoking this function multiple times without 
  * refreshing your browser will continuously remove artists from the array 
  * until there are none left. If you refresh your browser, the data will reset.  
+ * 
+ * 
 */
 
+//Done//
 
-
-//Partially working NOT DONE//
 function removeArtist(arr,index) {
-  return arr.slice([index])
+      arr.splice(index,1)
+    return arr.length
   }
-  console.log(removeArtist(artists,1))
+  console.log(removeArtist(artists,0))
 
 
 
