@@ -248,7 +248,7 @@ returns an array with names of artists who were born in and died in
 1959 - included / born in 1889 and died in 1925 not included - should return 
 ["Salvador Dali", "Frida Kahlo"]*/
 
-// STUCK
+// Done
 
 
 function get20s(arr){
