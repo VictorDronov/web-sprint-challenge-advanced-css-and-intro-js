@@ -248,22 +248,20 @@ returns an array with names of artists who were born in and died in
 1959 - included / born in 1889 and died in 1925 not included - should return 
 ["Salvador Dali", "Frida Kahlo"]*/
 
-
 // STUCK
 
 
 function get20s(arr){
   let artistName = []
   for (let i=0; i<arr.length; i++){
-  //loop through artist array and find the years born 1900 and died before 2000
-    if(arr[i].years.split(''))
-  //if the arist year is > 1900 or <2000
-    artistName.push(arr[i])
-  //return their name
+    if(arr[i].years.split("-") >= '1900' && arr[i].years.split("-") <= '2000'){
+      artistName.push(arr[i].name)
+      // console.log(arr[i].years)
+    }
   }
   return artistName
 }
-console.log(get20s(artists))
+console.log(get20s(artists));
 
 
   
