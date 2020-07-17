@@ -252,10 +252,18 @@ returns an array with names of artists who were born in and died in
 // STUCK
 
 
-// function get20s(arr){
-
-// }
-// console.log(get20s())
+function get20s(arr){
+  let artistName = []
+  for (let i=0; i<arr.length; i++){
+  //loop through artist array and find the years born 1900 and died before 2000
+    if(arr[i].years.split(''))
+  //if the arist year is > 1900 or <2000
+    artistName.push(arr[i])
+  //return their name
+  }
+  return artistName
+}
+console.log(get20s(artists))
 
 
   
@@ -277,11 +285,11 @@ returns an array with names of artists who were born in and died in
 
 //Done//
 
-function removeArtist(arr,index) {
-      arr.splice(index,1)
-    return arr.length
-  }
-  console.log(removeArtist(artists,0))
+// function removeArtist(arr,index) {
+//       arr.splice(index,1)
+//     return arr.length
+//   }
+//   console.log(removeArtist(artists,0))
 
 
 
