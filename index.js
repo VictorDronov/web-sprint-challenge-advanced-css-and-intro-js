@@ -243,27 +243,36 @@ returns an array with names of artists who were born in and died in
 1959 - included / born in 1889 and died in 1925 not included - should return 
 ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+// function get20s(arr,years){
+//   let specificYears = []
+//   for(let i=0; i<arr.length; i++){
+//     if(arr[i].years < years && arr[i].years > years +100);{
+//       specificYears.push(arr[i].name);
+//     }
+//   }
+//   return specificYears
+// }
+// console.log(get20s(artists,1901))
 
-  /* Code here */
-
-}
-
-
+  
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
+ * removeArtist removes an artist from the array at the index and console.logs 
+ * the length of the remaining dataset.
  * 
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+ * Note that sucessfully invoking this function multiple times without 
+ * refreshing your browser will continuously remove artists from the array 
+ * until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
+// function removeArtist(arr,index) {
+//     arr[index].pop()
+//     return arr
+//   }
+//   console.log(removeArtist(artists,2))
  
 
 /**
@@ -279,12 +288,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+function addArtist(array,id,name,years,genre,nationality,bio){
+  array.push({id,name,years,genre,nationality,bio})
+  return array
   }
-
+console.log(addArtist(artists,20, "victor","2020-2020","Classic","Russian","lorem ipsum lorem ipsum, lorem ipsumlorem ipsum."))
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
